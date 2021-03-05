@@ -1,0 +1,221 @@
+:root {
+  --primary-color: #2b2b2b;
+  --secondary-color: #e0b354;
+  --footer-header-bgcolor: #93b8d3;
+  --grid-bgcolor: #D3D3D3;
+  --griditem-bgcolor: #A9A9A9;
+  --font-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  font: inherit;
+  vertical-align: baseline;
+  line-height: 1.6;
+  font-family: "Newsreader", serif;
+  color: var(--primary-color);
+  font-weight: var(--font-weight);
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 24px;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+a:active {
+  color: var(--primary-color);
+}
+.menu-list__item_active,
+.spBold {
+  color: var(--secondary-color);
+  font-weight: var(--font-weight);
+}
+.aboutme,
+.contactme {
+  color: var(--secondary-color);
+}
+button {
+  color: var(--primary-color);
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.addressInfo {
+  padding: 10px;
+}
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--footer-header-bgcolor);
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 150px;
+  margin-bottom: 2%;
+}
+.social-media {
+  flex-basis: 500px;
+}
+.page-header {
+  display: flex;
+  padding: 20px;
+  background-color: var(--footer-header-bgcolor);
+  margin: 3% 5% 1% 5%;
+}
+.page-header__item {
+  flex: 0 1 200px;
+}
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+.menu-list {
+  list-style-type: none;
+}
+.menu-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  background-color: var(--grid-bgcolor);
+  margin: 0% 5% 1% 5%;
+}
+.grid__item {
+  background-color: var(--griditem-bgcolor);
+}
+.profile-info {
+  display: flex;
+  padding: 20px;
+  background-color: var(--grid-bgcolor);
+  justify-content: center;
+  margin: 3% 5% 2% 5%;
+}
+.profile-info___item {
+  text-align: left;
+  padding: 20px;
+  border-radius: 50%;
+}
+.img-radius {
+  border-radius: 50%;
+}
+.heading-txt,
+.table-aboutme,
+.contact-form {
+  background-color: var(--grid-bgcolor);
+  text-align: center;
+  margin: 0 5%;
+}
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 501px) and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1{
+    font-size: 20px;
+  }
+}
+@keyframes color-change {
+    0% {
+      fill: #fdffbf;
+    }
+    50% {
+      fill: red;
+    }
+    100% {
+      fill: green;
+    }
+  }
+.sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+@keyframes cloud-move {
+    from {
+      transform: translate(0, 50px);
+    }
+    to {
+      transform: translate(200px, 50px);
+    }
+}
+.cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes cloud-move-reverse {
+    from {
+      transform: translate(446px, 48px);
+    }
+    to {
+      transform: translate(100px, 48px);
+    }
+  }
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+.button{
+  color: white;
+  padding: 15px 15px;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  margin-bottom: 10px;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  margin-top: 10px;
+}
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.berlin-illustration {
+  margin-top: 20px;
+}
+.table-info {
+  text-align: center;
+  margin: 0% 38%;
+  margin-bottom: 3%;
+}
+ 

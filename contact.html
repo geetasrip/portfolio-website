@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Protfolio</title>
+    <link rel="shortcut icon" href="img/logo.png" alt="logo" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <img src="img/logo-images.png" width="20" height="70" alt="Company Logo" class="page-header__item img-radius">
+      <nav class="main-navigation page-header__item">
+              <ul role="menubar" class="menu-list">
+                  <li>
+                      <a href="index.html" role="menuitem" class="menu-list__item ">Home</a>
+                  </li>
+                  <li>
+                      <a href="contact.html" role="menuitem" class="menu-list__item menu-list__item_active">Contact</a>
+                  </li>
+                  <li>
+                      <a href="about.html" role="menuitem" class="menu-list__item">About</a>
+                  </li>
+                  <li>
+                      <a href="work.html" role="menuitem" class="menu-list__item">Work</a>
+                  </li>
+              </ul>
+          </nav>
+      </header>
+    <!--Contact Form-->
+    <div class="contact-form">
+       <h1> Contact Me</h1>
+       <form action="/login-form-action" method="post" id="contact-form">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="user_email" required><br><br>
+          <label for="tel">Telephone:</label>
+          <input type="tel" id="tel" name="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br><br>
+          <label class="standard-label">Message: </label>
+          <textarea for=""required maxlength="240"></textarea><br>
+          <button type="button" id="submitBtn">Send Message</button>
+        </form>
+        <div class="addressInfo"><span class="spBold">Address:</span><br>
+          850 Cherry Ave,<br>
+          San Bruno<br>
+          CA 94066<br>
+          <a href="mailto@geeta.peddireddi@art.com">geeta.peddireddi@art.com</a><br>
+          Tel:<a href="tel: +1123123456">+1123123456</a><br>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <h2>Find me on</h2>
+        <div class="social-media">
+          <a href="https:www.facebook.com" class="social-media"><img src="img/facebook-logo.svg" width="30" height="30" alt="Facebook"/></a>
+          <a href="https:www.twitter.com" class="social-media"><img src="img/twitter-logo.svg" width="30" height="30" alt="Twitter"/></a>
+          <a href="https:www.linkdin.com" class="social-media"><img src="img/linkedin-logo.svg" width="30" height="30" alt="Linkdin"/></a>
+        </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+  </body>
+</html>
