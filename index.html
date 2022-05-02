@@ -1,94 +1,355 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Title has been changed</title>
+    <title>Portfolio Website Geetasri Peddi Reddi</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- linking css file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstrap CDN -->
     <link
-      rel="shortcut icon"
-      href="img/logo.png"
-      alt="logo"
-      type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/31149d48b0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/script.js"></script>
   </head>
+
   <body>
-    <header class="page-header">
-      <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="menu-list fontSize divalignCenter">
-          <li>
-            <a
-              href="index.html"
-              role="menuitem"
-              class="menu-list__item menu-list__item_active"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a href="work.html" role="menuitem" class="menu-list__item">Work</a>
-          </li>
-          <li>
-            <a href="about.html" role="menuitem" class="menu-list__item"
-              >About</a
-            >
-          </li>
-          <li>
-            <a href="contact.html" role="menuitem" class="menu-list__item"
-              >contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <section>
-      <div class="profile-info">
-        <img
-          src="img/BrighterLearningPreview.jpg"
-          width="250"
-          height="250"
-          alt="Company Logo"
-          class=" profile-info___item"
-        />
-        <div class="profile-info___item fontSize">
-          <h1>Hello World</h1>
-          <span class="fontSize">My name is Geetasr Peddi Reddi.</span>
-          <p>
-            <span class="spBold">Full Stack Javascript/Frontend Engineer</span>
-          </p>
-          <button type="button">
-            Check out some of my code by clicking About above
-          </button>
+    <!-- load javascript after loading all html content -->
+    
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+      <div class="container">
+        <a class="navbar-brand" href="#">Geetasri</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-    <footer class="page-footer">
-      <h2>Find me on</h2>
-      <div class="social-media">
-        <a href="https:www.facebook.com" class="social-media"
-          ><img
-            src="img/facebook-logo.svg"
-            width="30"
-            height="30"
-            alt="Facebook"
-        /></a>
-        <a href="https:www.twitter.com" class="social-media"
-          ><img src="img/twitter-logo.svg" width="30" height="30" alt="Twitter"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/geetasri-peddi-reddi-2a8b08175"
-          class="social-media"
-          ><img src="img/linkedin-logo.svg" width="30" height="30" alt="Linkdin"
-        /></a>
+    </nav>
+
+    
+    <!-- main banner
+    <section class="bgimage" id="home">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+            <h2 class="hero_title">Hi, it's me Brad</h2>
+            <p class="hero_desc">
+              I am a professional freelancer in New York City
+            </p>
+          </div>
+        </div>
       </div>
+    </section> -->
+
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-left">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="img/profilePic.jpeg" class= "imageAboutPage" alt="">
+                </div>
+
+                <div class="col-lg-8">
+                    <p>     
+                            <br>
+                            8+ years of professional experience in software web development using various web technologies. 
+                            Proficiency in React Js, Node Js, Redux, Express Js, JavaScript, JQuery, AJAX, AngularJS, Bootstrap 3, JSON/JSONP, Responsive design.
+                            Experienced in agile/scrum development.  
+                            Experience in handling cross browser, cross platform markup and layout. 
+                    </p>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Name: Geetasri Peddi Reddi</li>
+                                <li>Occupation: Web Developer</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <h4>
+                                Career Foundry Bootcamp Details
+
+                        </h4>
+                        <p> 
+                                <ul>
+                                        <li>Intro to Frontend Development by Career Foundry (HTML,CSS,jQuery, CSS
+                                                preprocessors, Responsive Web Design)</li>
+                                        <li>
+                                                Full Stack Immersion Course by Career Foundry.(Javascript, Server Side
+                                                Programming, Node.js, Web Server Frameworks, React, Testing in React, Native app
+                                                Development, React Native, Progressive Web Applications, React Bootstrap, Web Ethics and
+                                                Data Security, Data Visualization)
+                                        </li>
+                                        <li>
+                                                Certificate Link: <br>
+                                        https://drive.google.com/file/d/128xNqoJeLU4DXjAoqSqO1ONcm3pdko_N/view?usp=sharing.
+                                        </li>
+                                    </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- services section-->
+    <section id="services">
+        <div class="container">
+            <h1 class="text-center">Services</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class="fas servicesIcon fa-clock"></i>
+                            <h4 class="card-title mt-3">Website Development</h4>
+                            <p class="card-text mt-3"> Experience on working most important Search related pages on Art.com ecommerce pages called Gallery.
+                                    Worked on skylark react based application to maintain product inventory in house.
+                                    Experience in working and developing server side applications using React/Node js technologies.
+                                    Collaborate with product managers and UX to implement various features..
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-layer-group'></i>
+                            <h4 class="card-title mt-3">Node Js experience</h4>
+                            <p class="card-text mt-3">Experience in working and developing server side applications using React/Node js technologies.
+                              Developed Rest based Moves api as part of Career foundry Full stack immersive course and also
+                              while working at Art on Gallery Page.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='far servicesIcon fa-check-circle'></i>
+                            <h4 class="card-title mt-3">React UI Development</h4>
+                            <p class="card-text mt-3">
+                                    Implement React/Javascript based components which can be Experimented using A/B Testing framework by wrapping around configs.
+                                    Creating front-end client side code components using HTML, Javascript, React and CSS as well as Javascript frameworks 
+                                    such as jQuery for easily executing on the different browsers
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-search'></i>
+                            <h4 class="card-title mt-3">SEO</h4>
+                            <p class="card-text mt-3"> Real time experience in making pages SEO friendly. Hands on experience
+                            working on various tags on page to make sure pages are crawlable.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-shield-alt'></i>
+                            <h4 class="card-title mt-3">CI/CD</h4>
+                            <p class="card-text mt-3"> Experience with Jenkins and github to configure CI/CD pipelines
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-wrench'></i>
+                            <h4 class="card-title mt-3">Experimentation</h4>
+                            <p class="card-text mt-3">
+                                    Implement React/Javascript based components which can be Experimented using A/B Testing framework by wrapping around configs.
+                                    Gather A/B testing related requirements from the Product team to determine server side setup required
+                                    mplement Universal Analytics across all pages of the website in node js and java content management system pages
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/ChattApp.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Native React Mobile Chat Application
+                                </h4>
+                            <p class="card-text">Developed a chat app for mobile devices using React Native. The app will provide users with various chat options like sending messages, 
+                                uploading images and also sharing location</p>
+                            <div class="text-center">
+                                <a href="https://github.com/geetasrip/ChatApp" class="btn btn-success">Chat App Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="img/MoviesApi.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Movies Nodejs API</h4>
+                            <p class="card-text">Developed a restful movie api to provide all CRUD funtionalites and also ability to add movies to user profile.</p>
+                            <div class="text-center">
+                                <a href="https://github.com/geetasrip/movie_api" class="btn btn-success">Movies Api Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="img/MoviesGallery.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">React Redux Based Movie Application</h4>
+                            <p class="card-text">React based application to view movies. Ability to save to profile and view many more details like Director info etc
+                                </p>
+                            <div class="text-center">
+                                <a href="https://github.com/geetasrip/myFlix-client" class="btn btn-success">myFlix App</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="img/meetapp.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">React based Meet App</h4>
+                            <p class="card-text">This mobile chat app is made using React Native. The app has an interface that enables users to send and receive chat messages, images and locations</p>
+                            <div class="text-center">
+                                <a href="https://github.com/geetasrip/meet" class="btn btn-success">Meet App Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="img/MoviesGallery.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Angular Movies Application</h4>
+                            <p class="card-text">Angular based application to view and manage movies for a given
+                                    profile.</p>
+                            <div class="text-center">
+                                <a href="https://github.com/geetasrip/myflix-angular-client-new" class="btn btn-success">Movies Angular Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="img/PokemonApp.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Pokemon App
+                                </h4>
+                            <p class="card-text">A minor web application that loads data from an external API and enables the viewing of different Pokémon in detail.</p>
+                            <div class="text-center">
+                                <a href="https://github.com/geetasrip/simple-js-app" class="btn btn-success">Github Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- contact section-->
+    
+
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row ">
+                    <div class="col-lg-6">
+
+                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                    <div style="overflow:hidden;max-width:100%;width:2000px;height:500px;"><div id="googlemaps-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=dublin+california&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="codefor-googlemap" rel="nofollow" href="https://dedicatedhosting.pro" id="grabmap-authorization">dedicatedhosting.pro</a><style>#googlemaps-display img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>
+
+                </div>
+
+                <div class="row ">
+                        <div class="col-lg-6">
+                      Address:
+                2523 Bassetts Way,
+                Dublin
+                CA 94568
+                geeta.peddireddi@gmail.com
+                Tel:9252094460
+                        
+                    </div>
+              
+
+
+        </div>
+                
+
+               
+
+            </div>
+        </div>
+    </section>
+    <!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
     </footer>
-    <script src="js/tota11y.min.js"></script>
   </body>
 </html>
